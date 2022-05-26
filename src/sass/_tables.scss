@@ -1,0 +1,27 @@
+.results-table {
+  overflow-x:auto;
+  min-width:92ch;
+}
+
+table{
+
+  width:100%;
+  
+  tr:hover {
+    background-color: var(--color-light);
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  th {
+    background-color: var(--color-primary);
+    color:var(--color-light)
+  }
+
+  th, td {
+    text-align:left;
+    border-bottom: 1px solid #ddd;
+  }
+}

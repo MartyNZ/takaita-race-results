@@ -1,0 +1,61 @@
+<div class="results-table">
+  <table>
+    <tbody>
+      <tr>
+        <th>Rank</th>
+        <th>Boat Name</th>
+        <th>Sail #</th>
+        <th>Race 1</th>
+        <th>Race 2</th>
+        <th>Race 3</th>
+        <th>Nett Score</th>
+        <th>Rating</th>
+      </tr>
+      {# {% set cardSlug %}{{ boat.boat | slug }}{% endset %} #}
+      {% for boat in Summer2021.results %}
+      <tr>
+        <td>{{ boat.rank }}</td>
+        <td>{{ boat.boat }}</td>
+        <td>{{ boat.sailno }}</td>
+        <td>{{ boat.r1 | replace(".0","") }}</td>
+        <td>{{ boat.r2 | replace(".0","") }}</td>
+        <td>{{ boat.r3 | replace(".0","") }}</td>
+        <td>{{ boat.nett | replace(".0","") }}</td>
+        <td>{{ boat.rating }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{# <li class="card background-light">
+  {% set cardSlug %}{{ boat.boat | slug }}{% endset %}
+
+  <header>
+    <h3 id="{{ cardSlug }}">{{ boat.boat }}</h3>
+      {% if boat.rank == "1st" %}
+        <div class="rank-badge first">
+      {% elif boat.rank == "2nd" %}
+        <div class="rank-badge second">
+      {% elif boat.rank == "3rd" %}
+        <div class="rank-badge third">
+      {% else %}
+        <div class="rank-badge">
+      {% endif %}
+        {{ boat.rank }}</div>
+  </header>
+  <ul role="list">
+    <li>Sail Number:<span>{{ boat.boat }}</span></li>
+    <li>Race Results
+      <ul role="list">
+        <li>Race 1:<span>{{ boat.r1 | replace(".0","") }}</span></li>
+        <li>Race 2:<span>{{ boat.r2 | replace(".0","") }}</span></li>
+        <li>Race 3:<span>{{ boat.r3 | replace(".0","") }}</span></li>
+        <li><strong>Score :<span>{{ boat.nett | replace(".0","") }}</span></strong></li>
+      </ul>
+    </li>
+  </ul>
+  <footer class="background-primary">
+    <small>Rating: {{ boat.rating }}</small>
+  </footer>
+</li> #}

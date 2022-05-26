@@ -9,14 +9,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
+	<title>{{ meta.title }} | {{ meta.descr }}</title>
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 </head>
 <body>
 	{% if page.fileSlug %}
 		<nav class="background-primary">
-			<a href="/">{{ meta.siteTitle }}</a>
-			<small><em>Fetching results since {{ dateLimit | dateLimitDisplay }}</em></small>
+			<h1>{{ meta.siteTitle }}</h1>
+			<h3>{{ meta.descr }}</h3>
 		</nav>
 	{% endif %}
 
@@ -35,8 +35,8 @@
 				<p class="header-meta">{{ itemCategory | safe }} <a href="/{{ item.feedTitle | slug }}/">All from {{ item.feedTitle }}</a> <strong><a href="{{ link }}">View <span class="inclusively-hidden">{{ title }}</span> on {{ item.siteUrl | domain }}</a></strong></p>
 			{% elseif not page.fileSlug %}
 		<div class="container container--home">
-				<h1>{{ meta.siteTitle }}</h1>
-				<small><em>Fetching results since {{ dateLimit | dateLimitDisplay }}</em></small>
+			<h1>{{ meta.siteTitle }}</h1>
+			<h2>{{ meta.descr }}</h2>
 			{% else %}
 		<div class="container">
 				<h1>{{ title }}</h1>
@@ -47,11 +47,7 @@
 	{{ content | safe }}
 	</main>
 	<footer class="background-primary">
-		<p><a href="https://github.com/5t3ph/eleventy-rss-reader">eleventy-rss-reader</a> created by <a href="https://twitter.com/5t3ph">Stephanie Eckles</a></p>
 	</footer>
 
-	{% if link %}
-	<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-	{% endif %}
 </body>
 </html>

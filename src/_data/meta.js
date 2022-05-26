@@ -1,3 +1,4 @@
 module.exports = {
-  "siteTitle": "Steph's Favorite RSS"
+  "siteTitle": "Taikata Sailing Club",
+  "descr": "Race Results"
 }

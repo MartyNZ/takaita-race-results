@@ -1,19 +1,32 @@
 ---
 layout: base.njk
-title: Feeds
+title: Results
+data: results
 ---
-
-{# <ul>
-{% for item in collections.items %}
-<li>{{ item.data.new }} - {{ item.data.title }}</li>
+<h3>{{ Summer2021.series }}</h3>
+  <ul>
+  {% for boat in Summer2021.results %}
+  <li><strong>{{ boat.rank }} :: {{ boat.boat }}</strong>
+    <ul>
+      <li>Sail Number: {{ boat.sailno }}</li>
+      <li>Placings
+        <ul>Race 1: {{ boat.r1 }}</ul>
+        <ul>Race 2: {{ boat.r2 }}</ul>
+        <ul>Race 3: {{ boat.r3 }}</ul>
+        <ul>Score: <strong>{{ boat.nett}}</strong></ul>
+      </li>
+      <li>Rating: {{ boat.rating }}</li>
+    </ul>
+  </li>
+  <div>&nbsp;</div>
 {% endfor %}
-</ul> #}
+</ul>
 
-{% for category in feeds %}
+{# {% for category in feeds %}
   <h2><a href="/category/{{ category.category | slug }}/">{{ category.category }}</a></h2>
   <ul class="grid">
     {% for feed in category.items %}
       {% include "sourceCard.njk" %}
     {% endfor %}
   </ul>
-{% endfor %}
+{% endfor %} #}

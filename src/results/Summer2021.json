@@ -1,0 +1,145 @@
+{
+  "series": "Summer Series - 2020-2021",
+  "results": [
+  {
+    "rank": "1st",
+    "boat": "Limeburner",
+    "sailno": "110",
+    "rating": "3.00",
+    "r1": "1.0",
+    "r2": "1.0",
+    "r3": "1.0",
+    "nett": "3.0"
+  },
+  {
+    "rank": "2nd",
+    "boat": "Shadze",
+    "sailno": "206",
+    "rating": "14.00",
+    "r1": "2.0",
+    "r2": "2.0",
+    "r3": "3.0",
+    "nett": "7.0"
+  },
+  {
+    "rank": "3rd",
+    "boat": "Matitai",
+    "sailno": "53",
+    "rating": "3.00",
+    "r1": "3.0",
+    "r2": "4.0",
+    "r3": "2.0",
+    "nett": "9.0"
+  },
+  {
+    "rank": "4th",
+    "boat": "Chilly",
+    "sailno": "39",
+    "rating": "10.00",
+    "r1": "4.0",
+    "r2": "3.0",
+    "r3": "4.0",
+    "nett": "11.0"
+  },
+  {
+    "rank": "5th",
+    "boat": "Footprint",
+    "sailno": "85",
+    "rating": "11.00",
+    "r1": "6.0",
+    "r2": "5.0",
+    "r3": "5.0",
+    "nett": "16.0"
+  },
+  {
+    "rank": "6th",
+    "boat": "Sea Lion",
+    "sailno": "125",
+    "rating": "17.00",
+    "r1": "5.0",
+    "r2": "6.0",
+    "r3": "8.0",
+    "nett": "19.0"
+  },
+  {
+    "rank": "7th",
+    "boat": "Potomac",
+    "sailno": "92",
+    "rating": "0.00",
+    "r1": "8.0",
+    "r2": "7.0",
+    "r3": "6.0",
+    "nett": "21.0"
+  },
+  {
+    "rank": "8th",
+    "boat": "Rapscallion",
+    "sailno": "116",
+    "rating": "17.00",
+    "r1": "7.0",
+    "r2": "9.0",
+    "r3": "7.0",
+    "nett": "23.0"
+  },
+  {
+    "rank": "9th",
+    "boat": "Amber",
+    "sailno": "23",
+    "rating": "17.00",
+    "r1": "9.0",
+    "r2": "8.0",
+    "r3": "11.0",
+    "nett": "28.0"
+  },
+  {
+    "rank": "10th",
+    "boat": "Kotiri",
+    "sailno": "57",
+    "rating": "19.00",
+    "r1": "10.0",
+    "r2": "11.0",
+    "r3": "9.0",
+    "nett": "30.0"
+  },
+  {
+    "rank": "11th",
+    "boat": "Pollyanna",
+    "sailno": "128",
+    "rating": "17.00",
+   "r1": "11.0",
+    "r2": "10.0",
+    "r3": "10.0",
+    "nett": "31.0"
+  },
+  {
+    "rank": "12th",
+    "boat": "Cynet",
+    "sailno": "240",
+    "rating": "0.00",
+    "r1": "12.0",
+    "r2": "12.0",
+    "r3": "12.0",
+    "nett": "36.0"
+  },
+  {
+    "rank": "13th",
+    "boat": "Unnamed",
+    "sailno": "221",
+    "rating": "0.00",
+    "r1": "14.0",
+    "r2": "13.5",
+    "r3": "13.0",
+    "nett": "40.5"
+  },
+  {
+    "rank": "14th",
+    "boat": "Karaka Jack",
+    "sailno": "16",
+    "rating": "0.00",
+    "r1": "13.0",
+    "r2": "13.5",
+    "r3": "14.0",
+    "nett": "40.5"
+  }
+  ]
+}

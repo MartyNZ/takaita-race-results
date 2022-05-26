@@ -1,0 +1,31 @@
+<li class="card background-light">
+  {% set cardSlug %}{{ boat.boat | slug }}{% endset %}
+
+  <header>
+    <h3 id="{{ cardSlug }}">{{ boat.boat }}</h3>
+      {% if boat.rank == "1st" %}
+        <div class="rank-badge first">
+      {% elif boat.rank == "2nd" %}
+        <div class="rank-badge second">
+      {% elif boat.rank == "3rd" %}
+        <div class="rank-badge third">
+      {% else %}
+        <div class="rank-badge">
+      {% endif %}
+        {{ boat.rank }}</div>
+  </header>
+  <ul role="list">
+    <li>Sail Number:<span>{{ boat.sailno }}</span></li>
+    <li>Race Results
+      <ul role="list">
+        <li>Race 1:<span>{{ boat.r1 | replace(".0","") }}</span></li>
+        <li>Race 2:<span>{{ boat.r2 | replace(".0","") }}</span></li>
+        <li>Race 3:<span>{{ boat.r3 | replace(".0","") }}</span></li>
+        <li><strong>Score :<span>{{ boat.nett | replace(".0","") }}</span></strong></li>
+      </ul>
+    </li>
+  </ul>
+  <footer class="background-primary">
+    <small>Rating: {{ boat.rating }}</small>
+  </footer>
+</li>

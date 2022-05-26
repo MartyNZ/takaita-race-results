@@ -8,21 +8,37 @@
   width: 1px;
 }
 
-.new-count {
-  width: 3ch;
-  height: 3ch;
-  line-height: 3ch;
+.rank-badge {
+  justify-self: end;
+  background-color: var(--background);
+  width: 5ch;
+  height: 5ch;
+  line-height: 4ch;
   display: grid;
   place-content: center;
   border-radius: 50%;
+  border: 1px solid black;
   font-weight: bold;
   font-size: 1.25rem;
-}
+  } 
+  .first{
+    background-color: gold;
+  }
 
-.new-badge {
-  font-size: 0.8em;
-  padding: 0.15em 0.25em;
-  border-radius: 0.25rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+  .second{
+    background-color: silver;
+  }
+
+  .third{ 
+    background-color: #cd7f32;
+  }
+
+// .rank-badge {
+//   justify-self: end;
+//   background-color: var(--background);
+//   font-size: 0.8em;
+//   padding: 0.25em;
+//   border-radius: 50%;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }

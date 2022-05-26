@@ -9,38 +9,38 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ meta.title }} | {{ meta.descr }}</title>
+	<title>{{ meta.siteTitle }} | {{ meta.descr }}</title>
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 </head>
 <body>
-	{% if page.fileSlug %}
+	{# {% if page.fileSlug %}
 		<nav class="background-primary">
 			<h1>{{ meta.siteTitle }}</h1>
 			<h3>{{ meta.descr }}</h3>
 		</nav>
-	{% endif %}
-
-	<header {% if not page.fileSlug %}class="background-primary"{% endif %}>
-			{% if siteUrl and not link %}
+	{% endif %} #}
+	<header class="background-primary">
+	{# <header {% if not page.fileSlug %}class="background-primary"{% endif %}>
+		{% if siteUrl and not link %}
 		<div class="container container--source">
 				{% newCount collections.items, title, title | slug %}
 				<div>
 					<h1 id="{{ title | slug }}">{{ title }}</h1>
 					<p class="header-meta">{{ itemCategory | safe }} <a href="{{ siteUrl }}">Visit full site</a></p>
-				</div>
-			{% elseif link %}
+				</div> #}
+			{# {% elseif link %}
 		<div class="container container--item">
 				{% include "postDate.njk" %}
 				<h1>{{ title }}</h1>
 				<p class="header-meta">{{ itemCategory | safe }} <a href="/{{ item.feedTitle | slug }}/">All from {{ item.feedTitle }}</a> <strong><a href="{{ link }}">View <span class="inclusively-hidden">{{ title }}</span> on {{ item.siteUrl | domain }}</a></strong></p>
-			{% elseif not page.fileSlug %}
+			{% elseif not page.fileSlug %} #}
 		<div class="container container--home">
 			<h1>{{ meta.siteTitle }}</h1>
 			<h2>{{ meta.descr }}</h2>
-			{% else %}
+			{# {% else %}
 		<div class="container">
 				<h1>{{ title }}</h1>
-			{% endif %}
+			{% endif %} #}
 		</div>
 	</header>
 	<main>

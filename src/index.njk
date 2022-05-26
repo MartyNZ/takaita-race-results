@@ -4,11 +4,8 @@ title: Race Results
 data: results
 ---
 <h3>{{ Summer2021.series }}</h3>
-<ul class="grid">
-  {% for boat in Summer2021.results %}
-    {% include 'resultsCard.njk' %}
-  {% endfor %}
-</ul>
+  {% include 'resultsTable.njk' %}
+
 {# 
 {% for category in feeds %}
   <h2><a href="/category/{{ category.category | slug }}/">{{ category.category }}</a></h2>

@@ -47,6 +47,8 @@ module.exports = function (eleventyConfig) {
     const regex = /<script(.+?)<\/script>/gim;
     return content != undefined ? content.replace(regex, "&nbsp;") : content;
   });
+  
+  eleventyConfig.addPassthroughCopy("src/assets/");
 
   return {
     dir: {
